@@ -1,0 +1,37 @@
+@import "./vars";
+.tag {
+    color: $color_pry_orange;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.title {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 24px;
+    max-width: 510px;
+}
+
+.star {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/icons/Star.svg);
+    &.unchecked {
+        background-image: url(../img/icons/Star_unfill.svg);
+    }
+}
+
+span.colored {
+    color: $color_pry_orange;
+}
+
+.stroke {
+    -webkit-text-stroke: 1.3px;
+}
