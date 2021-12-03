@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="./css/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./css/bootstrap/bootstrap-icons.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Intelytics - Team</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="container">
+                    <div class="row row-cols-2 d-flex justify-content-between align-items-stretch">
+                        <div class="col-md-3">
+                            <div class="logo">
+                                <img src="img/nav/logo_light.png" alt="logo" class="light" />
+                                <img src="img/nav/logo_dark.png" class="dark" alt="logo" />
+                            </div>
+                        </div>
+                        <div class="col-md-9 d-flex justify-content-end">
+                            <ul
+                                class="
+                                    nav nav-tabs
+                                    justify-content-end
+                                    align-items-lg-center
+                                    border-0
+                                "
+                            >
+                                <div class="hamburger-close d-md-none d-flex">
+                                    <svg
+                                        width="62"
+                                        height="60"
+                                        viewBox="0 0 62 60"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <rect width="62" height="59.6222" rx="8" fill="#F2F7FD" />
+                                        <path
+                                            d="M41.6222 39.6222L22 20"
+                                            stroke="#091F34"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            d="M39.6222 20L20 39.6222"
+                                            stroke="#091F34"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </div>
+
+                                <li class="nav-item">
+                                    <a href="/" class="nav-link"><span>home</span></a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle active"
+                                        data-bs-toggle="dropdown"
+                                        href="#"
+                                        role="button"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        id="nav_drop"
+                                        ><span>about us <bi class="bi bi-chevron-down"></bi></span
+                                    ></a>
+                                    <div class="dropdown-menu" aria-labelledby="nav_drop">
+                                        <a class="dropdown-item" href="about.html"
+                                            >About Intelytics <i class="bi bi-chevron-right"></i
+                                        ></a>
+                                        <a class="dropdown-item team active" href=""
+                                            >The Team <i class="bi bi-chevron-right"></i
+                                        ></a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="services.html" class="nav-link">services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link">contact us</a>
+                                </li>
+                                <img
+                                    src="./img/nav/logo_dark.png"
+                                    alt=""
+                                    class="underlay one d-md-none d-block"
+                                /><img
+                                    src="./img/nav/logo_dark.png"
+                                    class="underlay two d-md-none d-block"
+                                    alt=""
+                                />
+                            </ul>
+                            <div class="hamburger d-md-none d-block">
+                                <svg
+                                    width="48"
+                                    height="40"
+                                    viewBox="0 0 48 40"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <rect
+                                        width="48"
+                                        height="40"
+                                        rx="4"
+                                        fill="white"
+                                        fill-opacity="0.2"
+                                    />
+                                    <path
+                                        d="M38 12H10.25"
+                                        stroke="white"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M38 20H16.4167"
+                                        stroke="white"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M38 28H10.25"
+                                        stroke="white"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="hero contact_hero team_hero">
+                <div class="swiper-slide">
+                    <div class="img_wrapper">
+                        <img src="img/team/team_hero.png" alt="slide1" class="about_hero" />
+                    </div>
+                    <div class="hero-content contact">
+                        <div class="container">
+                            <div class="row row-cols-1">
+                                <div class="col-md-12">
+                                    <h1>A committed workforce with excellence as a watch-word</h1>
+                                </div>
+                            </div>
+                            <div class="scroll_anim_wrapper">
+                                <div class="scroll_anim">
+                                    <div class="arrow">
+                                        <svg
+                                            width="16"
+                                            height="79"
+                                            viewBox="0 0 16 79"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M7.29289 78.7071C7.68342 79.0976 8.31658 79.0976 8.70711 78.7071L15.0711 72.3431C15.4616 71.9526 15.4616 71.3195 15.0711 70.9289C14.6805 70.5384 14.0474 70.5384 13.6569 70.9289L8 76.5858L2.34315 70.9289C1.95262 70.5384 1.31946 70.5384 0.928932 70.9289C0.538408 71.3195 0.538408 71.9526 0.928932 72.3431L7.29289 78.7071ZM7 0L7 78H9L9 0L7 0Z"
+                                                fill="#F37F02"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <div class="box"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="team_section">
+                <div class="container">
+                    <div class="title">
+                        <h2>The Advisory Council</h2>
+                    </div>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="testimonial_card">
+                                    <div class="img_wrapper">
+                                        <img src="./img/team/team_image_5.png" alt="" />
+                                    </div>
+                                    <h4>Mrs. Olubunmi Morenikeji</h4>
+                                    <p>BSc, MBA, MNIM, FCA</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial_card">
+                                    <div class="img_wrapper">
+                                        <img src="./img/team/team_image_2.png" alt="" />
+                                    </div>
+                                    <h4>Dr. Babasola Ogunsanya</h4>
+                                    <p>M.B.B.S, M.P.H, F.W.A.C.S, F.M.C.O.G</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial_card">
+                                    <div class="img_wrapper">
+                                        <img src="./img/team/team_image_3.png" alt="" />
+                                    </div>
+                                    <h4>Mr. Mideno Bayagbon</h4>
+                                    <p>BA, MSc, CEP</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial_card">
+                                    <div class="img_wrapper">
+                                        <img src="./img/team/team_image_4.png" alt="" />
+                                    </div>
+                                    <h4>Mr. George Sadoh</h4>
+                                    <p>BSc, MBA, FCA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="support">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/support/Rectangle 1.png" alt="one" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/support/Rectangle 2.png" alt="two" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/support/Rectangle 3.png" alt="three" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/support/Rectangle 4.png" alt="four" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/support/Rectangle 5.png" alt="five" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/support/Rectangle 5.png" alt="siz" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/support/Rectangle 7.png" alt="seven" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/support/Rectangle 8.png" alt="eight" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="logo">
+                            <div class="logo_wrapper">
+                                <img src="./img/nav/logo_light.png" alt="" />
+                                <img src="./img/nav/logo_light.png" alt="" class="underlay" />
+                            </div>
+                        </div>
+                        <div class="quick_links">
+                            <div class="list">
+                                <h3>Quick Links</h3>
+                                <ul>
+                                    <li>
+                                        <p><a href="/">Home</a></p>
+                                    </li>
+                                    <li>
+                                        <p><a href="about.html">About Us</a></p>
+                                    </li>
+                                    <li>
+                                        <p><a href="services.html">Our Sercives</a></p>
+                                    </li>
+                                    <li>
+                                        <p><a href="contact.html">Contact Us</a></p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list">
+                                <h3>Services</h3>
+                                <ul>
+                                    <li>
+                                        <p><a href="#">Consulting</a></p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <a href="#"><span class="colored">Technology</span></a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><a href="#">Financial Inclusion & Social Impact</a></p>
+                                    </li>
+                                    <li>
+                                        <p><a href="#">Business Intelligence & Analytics</a></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="contact">
+                            <div class="list">
+                                <h3>Address</h3>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            The Bulb Africa, 39 Ikorodu Road, Jibowu Lagos Nigeria.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Plot 32, Unity Road, Ikeja, Lagos, Nigeria.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list contact_details">
+                                <h3>Contact Information</h3>
+                                <ul>
+                                    <li>
+                                        <p>0700THEDESK</p>
+                                    </li>
+                                    <li>
+                                        <p>support@intelyticslimited.com</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="social top d-flex d-md-none">
+                            <div class="bi bi-facebook"></div>
+                            <div class="bi bi-linkedin"></div>
+                            <div class="bi bi-instagram"></div>
+                            <div class="bi bi-twitter"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="grid">
+                        <div class="copy">Copyright @2021 | All Rights Reserved.</div>
+                        <div class="accolade">
+                            Designed By <span class="colored">Intelytics</span>
+                        </div>
+                        <div class="social">
+                            <div class="bi bi-facebook"></div>
+                            <div class="bi bi-linkedin"></div>
+                            <div class="bi bi-instagram"></div>
+                            <div class="bi bi-twitter"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./libraries/jquery-3.6.0.slim.min.js"></script>
+        <script src="./libraries/swiper-bundle.min.js"></script>
+        <script src="./libraries/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="./libraries/bootstrap.min.js"></script>
+        <script src="./libraries/ScrollTrigger.min.js"></script>
+        <script src="./main.js"></script>
+        <script>
+            ScrollAnim();
+            const swiper_team = new Swiper("#team_section .swiper", {
+                speed: 800,
+                slidesPerView: "auto",
+                spaceBetween: 24,
+                slidesPerView: "auto",
+            });
+        </script>
+    </body>
+</html>
