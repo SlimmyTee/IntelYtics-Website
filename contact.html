@@ -18,6 +18,7 @@
         <title>Intelytics - Contact Us</title>
     </head>
     <body>
+        
         <header>
             <nav>
                 <div class="container">
@@ -246,7 +247,7 @@
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <form action="" class="form">
+                            <form method="POST" action="#" class="form" id="imail_form">
                                 <div class="title">
                                     <h6
                                         class="tag d-md-none d-block"
@@ -257,6 +258,34 @@
                                     <h3 class="stroke">Send Us A Message</h3>
                                 </div>
                                 <div class="feilds">
+                                <div class="row">
+                                        <div class="form-group">
+                                            <label for="email">Full name</label>
+                                            <div class="input-field-wrapper">
+                                                <input
+                                                    type="text"
+                                                    name="fullname"
+                                                    id="fullname"
+                                                    class="form-control"
+                                                    placeholder="Input your fullname"
+                                                    aria-describedby="fullname input"
+                                                    required="required"
+                                                />
+                                                <div class="icon-wrapper">
+                                                    <img
+                                                        src="./img/icons/Error.svg"
+                                                        alt=""
+                                                        class="error"
+                                                    />
+                                                    <img
+                                                        src="./img/icons/Success.svg"
+                                                        alt=""
+                                                        class="success"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
@@ -267,7 +296,7 @@
                                                         name="email"
                                                         id="email"
                                                         class="form-control"
-                                                        placeholder="Placeholder"
+                                                        placeholder="What's your email address?"
                                                         aria-describedby="email input"
                                                         required="required"
                                                     />
@@ -292,10 +321,10 @@
                                                 <div class="input-field-wrapper">
                                                     <input
                                                         type="text"
-                                                        name="text"
+                                                        name="subject"
                                                         id="subject"
                                                         class="form-control"
-                                                        placeholder="Placeholder"
+                                                        placeholder="Give us a mailing topic"
                                                         aria-describedby="subject of email"
                                                         required="required"
                                                     />
@@ -315,34 +344,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="form-group">
-                                            <label for="email">Full name</label>
-                                            <div class="input-field-wrapper">
-                                                <input
-                                                    type="text"
-                                                    name="fullname"
-                                                    id="fullname"
-                                                    class="form-control"
-                                                    placeholder="Placehoder"
-                                                    aria-describedby="fullname input"
-                                                    required="required"
-                                                />
-                                                <div class="icon-wrapper">
-                                                    <img
-                                                        src="./img/icons/Error.svg"
-                                                        alt=""
-                                                        class="error"
-                                                    />
-                                                    <img
-                                                        src="./img/icons/Success.svg"
-                                                        alt=""
-                                                        class="success"
-                                                    />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
                                     <div class="row">
                                         <div class="form-group">
                                             <div class="input-field-wrapper">
@@ -352,14 +354,16 @@
                                                     name="message"
                                                     id="message"
                                                     rows="3"
-                                                    placeholder="Placeholder"
+                                                    placeholder="Tell us what you feel..."
                                                     required="required"
                                                 ></textarea>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <button class="cta pry">Send Message</button>
+                                <br>
+                                <div id="form_messages" style="text-align: center;"></div>
+                                <button class="cta pry" type="submit" name="submit" id="submit">Send Message</button>
                             </form>
                         </div>
                     </div>
@@ -497,12 +501,15 @@
             </div>
         </footer>
         <script src="./libraries/jquery-3.6.0.slim.min.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
         <script src="./libraries/swiper-bundle.min.js"></script>
         <script src="./libraries/gsap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
         <script src="./libraries/bootstrap.min.js"></script>
         <script src="./libraries/ScrollTrigger.min.js"></script>
         <script src="./main.js"></script>
+        <script src="jsauth/imail.js"></script>
+        <script src="jsauth/jquery.min.js"></script>
         <script>
             ScrollAnim();
 
@@ -552,5 +559,11 @@
                       this.parentNode.classList.remove("success"));
             });
         </script>
+        <script type="text/javascript">
+    if(window.history.replaceState){
+      window.history.replaceState(null, null, window.location.href);
+    }
+    </script>
+
     </body>
 </html>
