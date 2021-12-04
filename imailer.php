@@ -12,19 +12,18 @@ if(isset($_POST['submit'])){
     
     $subject =$subject;
     $fromname =$name;
-    $fromemail = $email;  //if u dont have an email create one on your cpanel
+    $fromemail = $email;
 
-    $mailto = 'support@intelyticslimited.com';  //the email which u want to recv this email
+    $mailto = 'support@intelyticslimited.com';
 
 
 
 
     
     
-    // carriage return type (RFC)
+
     $eol = "\r\n";
 
-    // main header (multipart mandatory)
     $headers = "From: ".$fromname." <".$fromemail.">" . $eol;
     $headers .= "MIME-Version: 1.0" . $eol;
     $headers .= "Content-Transfer-Encoding: 7bit" . $eol;
@@ -40,7 +39,6 @@ if(isset($_POST['submit'])){
     if (!mail($mailto, $subject, $body, $headers)) {
         $arrayName = array("stat"=>0, "msg"=>"Your mail was successfully sent. Toba Adept Admin will revert ASAP!");
         echo json_encode($arrayName);
-        // echo "gone";
         
     } 
 
@@ -48,7 +46,7 @@ if(isset($_POST['submit'])){
     else {
         $arrayName = array("stat"=> 1, "msg"=>"Oopss!! An Error occurred, Couldnt send your mail!");
           echo json_encode($arrayName);
-        // echo "mail send ... ERROR!";
+        
     }
         
 }
