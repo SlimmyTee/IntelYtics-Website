@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="./css/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./css/bootstrap/bootstrap-icons.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="container">
+                    <div class="row row-cols-2 d-flex justify-content-between align-items-stretch">
+                        <div class="col-md-3">
+                            <div class="logo">
+                                <img src="img/nav/logo_light.png" alt="logo" class="light" />
+                                <img src="img/nav/logo_dark.png" class="dark" alt="logo" />
+                            </div>
+                        </div>
+                        <div class="col-md-9 d-flex justify-content-end">
+                            <ul
+                                class="
+                                    nav nav-tabs
+                                    justify-content-end
+                                    align-items-lg-center
+                                    border-0
+                                "
+                            >
+                                <div class="hamburger-close d-md-none d-flex">
+                                    <svg
+                                        width="62"
+                                        height="60"
+                                        viewBox="0 0 62 60"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <rect width="62" height="59.6222" rx="8" fill="#F2F7FD" />
+                                        <path
+                                            d="M41.6222 39.6222L22 20"
+                                            stroke="#091F34"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            d="M39.6222 20L20 39.6222"
+                                            stroke="#091F34"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </div>
+
+                                <li class="nav-item">
+                                    <a href="/" class="nav-link"><span>home</span></a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle"
+                                        data-bs-toggle="dropdown"
+                                        href="#"
+                                        role="button"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        id="nav_drop"
+                                        ><span>about us <bi class="bi bi-chevron-down"></bi></span
+                                    ></a>
+                                    <div class="dropdown-menu" aria-labelledby="nav_drop">
+                                        <a class="dropdown-item" href="about.html"
+                                            >About Intelytics <i class="bi bi-chevron-right"></i
+                                        ></a>
+                                        <a class="dropdown-item team" href="team.html"
+                                            >The Team <i class="bi bi-chevron-right"></i
+                                        ></a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link active"><span>services</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link"
+                                        ><span>contact us</span></a
+                                    >
+                                </li>
+                                <img
+                                    src="./img/nav/logo_dark.png"
+                                    alt=""
+                                    class="underlay one d-md-none d-block"
+                                /><img
+                                    src="./img/nav/logo_dark.png"
+                                    class="underlay two d-md-none d-block"
+                                    alt=""
+                                />
+                            </ul>
+                            <div class="hamburger d-md-none d-block">
+                                <svg
+                                    width="48"
+                                    height="40"
+                                    viewBox="0 0 48 40"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <rect
+                                        width="48"
+                                        height="40"
+                                        rx="4"
+                                        fill="white"
+                                        fill-opacity="0.2"
+                                    />
+                                    <path
+                                        d="M38 12H10.25"
+                                        stroke="white"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M38 20H16.4167"
+                                        stroke="white"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M38 28H10.25"
+                                        stroke="white"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="hero services_hero">
+                <div class="swiper-slide">
+                    <div class="img_wrapper">
+                        <img src="img/services/services_hero.png" alt="slide1" />
+                    </div>
+                    <div class="hero-content about">
+                        <div class="container">
+                            <div class="row row-cols-1">
+                                <div class="col-md-12">
+                                    <h6 class="tag">OUR SERVICES</h6>
+                                    <h1>
+                                        We Defined Our <span class="colored">Services</span> to
+                                        Create Value
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="scroll_anim_wrapper">
+                                <div class="scroll_anim">
+                                    <div class="arrow">
+                                        <svg
+                                            width="16"
+                                            height="79"
+                                            viewBox="0 0 16 79"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M7.29289 78.7071C7.68342 79.0976 8.31658 79.0976 8.70711 78.7071L15.0711 72.3431C15.4616 71.9526 15.4616 71.3195 15.0711 70.9289C14.6805 70.5384 14.0474 70.5384 13.6569 70.9289L8 76.5858L2.34315 70.9289C1.95262 70.5384 1.31946 70.5384 0.928932 70.9289C0.538408 71.3195 0.538408 71.9526 0.928932 72.3431L7.29289 78.7071ZM7 0L7 78H9L9 0L7 0Z"
+                                                fill="#F37F02"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <div class="box"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="note">
+                <img src="./img/services/net_blue_slim.svg" alt="net" class="graphic" /><img
+                    src="./img/services/net_blue_slim.svg"
+                    alt="net"
+                    class="graphic"
+                />
+                <div class="container">
+                    <h2>
+                        Here are the <span class="colored">Services we render</span> as a Company to
+                        our Clients
+                    </h2>
+                </div>
+            </section>
+            <section class="services_list">
+                <div class="container">
+                    <div class="grid">
+                        <div class="grid_item">
+                            <div class="image">
+                                <img
+                                    src="img/services/net_blue_thick.svg"
+                                    alt="net"
+                                    class="net thick"
+                                />
+                                <div class="img_wrapper">
+                                    <div class="graphic blue"></div>
+                                    <img src="./img/services/Rectangle 13.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="content">
+                                <span class="index one">1</span>
+                                <h3>Consulting</h3>
+                                <p>
+                                    We proffer expert advice and corporate strategies that
+                                    efficiently transform organizations.
+                                </p>
+                                <div class="list">
+                                    <li>Business Advisory</li>
+                                    <li>Corporate Strategy</li>
+                                    <li>Bussiness Re-engineering</li>
+                                    <li>Business Transformation</li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid_item">
+                            <div class="content">
+                                <span class="index">2</span>
+                                <h3>Financial Inclusion & Impact</h3>
+                                <p>
+                                    We develop business models that ensure social inclusiveness,
+                                    locally and internationally.
+                                </p>
+                                <div class="list">
+                                    <li>Financial Inclusion</li>
+                                    <li>Sustainable Development Goals (SDGs)</li>
+                                    <li>Agency Banking</li>
+                                    <li>Social Welfare</li>
+                                </div>
+                            </div>
+                            <div class="image">
+                                <img
+                                    src="img/services/net_blue_thick.svg"
+                                    alt="net"
+                                    class="net thick"
+                                />
+                                <div class="img_wrapper gallery">
+                                    <div class="core">
+                                        <svg
+                                            width="48"
+                                            height="48"
+                                            viewBox="0 0 48 48"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M8.37123 29.9663H3.59523C2.35203 29.9663 1.33923 30.9791 1.33923 32.2223V42.1823C1.33923 43.4255 2.35203 44.4383 3.59523 44.4383H8.37123C9.61443 44.4383 10.6272 43.4255 10.6272 42.1823V32.2271C10.6272 30.9791 9.61443 29.9663 8.37123 29.9663ZM8.70723 42.1871C8.70723 42.3743 8.55363 42.5231 8.37123 42.5231H3.59523C3.40803 42.5231 3.25923 42.3695 3.25923 42.1871V32.2271C3.25923 32.0399 3.41283 31.8911 3.59523 31.8911H8.37123C8.55843 31.8911 8.70723 32.0447 8.70723 32.2271V42.1871Z"
+                                                fill="white"
+                                            />
+                                            <path
+                                                d="M20.3808 21.7103H15.6048C14.3616 21.7103 13.3488 22.7231 13.3488 23.9663V42.1871C13.3488 43.4303 14.3616 44.4431 15.6048 44.4431H20.3808C21.624 44.4431 22.6368 43.4303 22.6368 42.1871V23.9663C22.6416 22.7231 21.6288 21.7103 20.3808 21.7103ZM20.7216 42.1871C20.7216 42.3743 20.568 42.5231 20.3856 42.5231H15.6096C15.4224 42.5231 15.2736 42.3695 15.2736 42.1871V23.9663C15.2736 23.7791 15.4272 23.6303 15.6096 23.6303H20.3856C20.5728 23.6303 20.7216 23.7839 20.7216 23.9663V42.1871Z"
+                                                fill="white"
+                                            />
+                                            <path
+                                                d="M32.3953 25.8816H27.6193C26.3761 25.8816 25.3633 26.8944 25.3633 28.1376V42.1824C25.3633 43.4256 26.3761 44.4384 27.6193 44.4384H32.3953C33.6385 44.4384 34.6513 43.4256 34.6513 42.1824V28.1424C34.6513 26.8944 33.6385 25.8816 32.3953 25.8816ZM32.7313 42.1872C32.7313 42.3744 32.5777 42.5232 32.3953 42.5232H27.6193C27.4321 42.5232 27.2833 42.3696 27.2833 42.1872V28.1424C27.2833 27.9552 27.4369 27.8064 27.6193 27.8064H32.3953C32.5825 27.8064 32.7313 27.96 32.7313 28.1424V42.1872Z"
+                                                fill="white"
+                                            />
+                                            <path
+                                                d="M44.4048 17.376H39.6288C38.3856 17.376 37.3728 18.3888 37.3728 19.632V42.1872C37.3728 43.4304 38.3856 44.4432 39.6288 44.4432H44.4048C45.648 44.4432 46.6608 43.4304 46.6608 42.1872V19.632C46.6656 18.3888 45.6528 17.376 44.4048 17.376ZM44.7456 42.1872C44.7456 42.3744 44.592 42.5232 44.4096 42.5232H39.6336C39.4464 42.5232 39.2976 42.3696 39.2976 42.1872V19.632C39.2976 19.4448 39.4512 19.296 39.6336 19.296H44.4096C44.5968 19.296 44.7456 19.4496 44.7456 19.632V42.1872Z"
+                                                fill="white"
+                                            />
+                                            <path
+                                                d="M38.8512 11.6064C39.6816 12.3792 40.7904 12.8592 42.0144 12.8592C44.5824 12.8592 46.6656 10.776 46.6656 8.20796C46.6656 5.63996 44.5824 3.55676 42.0144 3.55676C39.4464 3.55676 37.3632 5.63996 37.3632 8.20796C37.3632 8.86076 37.4976 9.47516 37.7376 10.0416L33.3216 13.1472C32.688 12.4992 31.8624 12.0288 30.9072 11.8416C28.8528 11.4336 26.8512 12.4464 25.9056 14.1984L22.5936 13.032C22.8912 10.7616 21.48 8.55836 19.2096 7.94396C16.7328 7.26716 14.1744 8.73116 13.5024 11.208C13.224 12.2304 13.3152 13.2624 13.6848 14.1696L9.21599 17.1792C8.38079 16.368 7.23839 15.864 5.98079 15.864C3.41279 15.864 1.32959 17.9472 1.32959 20.5152C1.32959 23.0832 3.41279 25.1664 5.98079 25.1664C8.54879 25.1664 10.632 23.0832 10.632 20.5152C10.632 19.896 10.5072 19.3104 10.2912 18.7728L14.7552 15.768C15.3024 16.3008 15.984 16.704 16.7712 16.92C18.816 17.4768 20.9136 16.5744 21.9648 14.8464L25.3728 16.0464C25.1904 18.3648 26.7648 20.5008 29.1024 20.9664C31.6224 21.4656 34.0704 19.8288 34.5696 17.3088C34.7424 16.4256 34.6512 15.5568 34.3584 14.7744L38.8512 11.6064ZM42.0192 5.38076C43.5792 5.38076 44.8464 6.64796 44.8464 8.20796C44.8464 9.76796 43.5792 11.0352 42.0192 11.0352C40.4592 11.0352 39.192 9.76796 39.192 8.20796C39.192 6.64796 40.4544 5.38076 42.0192 5.38076ZM5.98079 23.3376C4.42079 23.3376 3.15359 22.0704 3.15359 20.5104C3.15359 18.9504 4.42079 17.6832 5.98079 17.6832C7.54079 17.6832 8.80799 18.9504 8.80799 20.5104C8.80799 22.0704 7.54559 23.3376 5.98079 23.3376ZM20.7216 13.1664C20.3136 14.6736 18.7584 15.5616 17.2512 15.1536C15.744 14.7456 14.856 13.1904 15.264 11.6832C15.672 10.176 17.2272 9.28796 18.7344 9.69596C20.2416 10.1088 21.1344 11.664 20.7216 13.1664ZM32.7792 16.9488C32.4768 18.48 30.9888 19.4736 29.4576 19.1712C27.9264 18.8688 26.9328 17.3808 27.2352 15.8496C27.5376 14.3184 29.0256 13.3248 30.5568 13.6272C32.088 13.9296 33.0816 15.4176 32.7792 16.9488Z"
+                                                fill="white"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <img src="./img/services/Rectangle 14.png" alt="" /><img
+                                            src="./img/services/Rectangle 20.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div>
+                                        <img src="./img/services/Rectangle 15.png" alt="" />
+                                        <img src="./img/services/Rectangle 16.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid_item">
+                            <div class="image">
+                                <img
+                                    src="img/services/net_blue_thick.svg"
+                                    alt="net"
+                                    class="net thick"
+                                />
+                                <div class="img_wrapper computers">
+                                    <div class="back"></div>
+                                    <img src="./img/services/computer.svg" class="desk" alt="" />
+                                    <img src="./img/services/computer_l.svg" class="mob" alt="" />
+                                </div>
+                            </div>
+                            <div class="content">
+                                <span class="index">3</span>
+                                <h3>Business Intelligence & Analytics</h3>
+                                <p>
+                                    We research and aggregate data to provide innovative business
+                                    solutions.
+                                </p>
+                                <div class="list">
+                                    <li>Research & Development</li>
+                                    <li>Consumer Analytics</li>
+                                    <li>Management Information System</li>
+                                    <li>Digital Marketing</li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid_item">
+                            <div class="content">
+                                <span class="index">4</span>
+                                <h3>Technology</h3>
+                                <p>
+                                    Our experience and vast knowledge on information technology
+                                    helps us create value added solutions that enhance business
+                                    potentials and foster innovative growth.
+                                </p>
+                                <div class="list">
+                                    <li>Mobile Application Development</li>
+                                    <li>Renewable & Alternative Energy</li>
+                                    <li>Bespoke Solutions</li>
+                                </div>
+                            </div>
+                            <div class="image">
+                                <img
+                                    src="img/services/net_blue_thick.svg"
+                                    alt="net"
+                                    class="net thick"
+                                />
+                                <div class="phone_wr wrapper">
+                                    <div class="img_wrapper phone">
+                                        <div class="back"></div>
+                                        <div class="box"></div>
+                                        <img
+                                            src="./img/services/phone_screen.png"
+                                            class="mob"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="help">
+                <img src="./img/services/help.png" alt="" />
+                <div class="container">
+                    <div class="title" style="max-width: 520px">
+                        <h6 class="tag">WE ARE READY TO HELP</h6>
+                        <h1>We are ready to render any of these services to you</h1>
+                        <button class="cta pry">Talk To Us</button>
+                    </div>
+                </div>
+            </section>
+            <section id="testimonials" class="grey">
+                <div class="container">
+                    <div class="title">
+                        <h6 class="tag">TESTIMONIES</h6>
+                        <h2>Testimonies from Honoured Clients</h2>
+                    </div>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="testimonial_card">
+                                    <div class="icon">
+                                        <img src="" alt="" />
+                                    </div>
+                                    <h4 class="name">Name of Testifier</h4>
+                                    <p>
+                                        In publishing and graphic design, Lorem ipsum is a
+                                        placeholder text commonly used to demonstrate the visual
+                                        form of a document.
+                                    </p>
+                                    <div class="rating">
+                                        <span class="star"></span><span class="star"></span
+                                        ><span class="star"></span><span class="star"></span
+                                        ><span class="star"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial_card">
+                                    <div class="icon">
+                                        <img src="" alt="" />
+                                    </div>
+                                    <h4 class="name">Name of Testifier</h4>
+                                    <p>
+                                        In publishing and graphic design, Lorem ipsum is a
+                                        placeholder text commonly used to demonstrate the visual
+                                        form of a document.
+                                    </p>
+                                    <div class="rating">
+                                        <span class="star"></span><span class="star"></span
+                                        ><span class="star"></span><span class="star"></span
+                                        ><span class="star"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial_card">
+                                    <div class="icon">
+                                        <img src="" alt="" />
+                                    </div>
+                                    <h4 class="name">Name of Testifier</h4>
+                                    <p>
+                                        In publishing and graphic design, Lorem ipsum is a
+                                        placeholder text commonly used to demonstrate the visual
+                                        form of a document.
+                                    </p>
+                                    <div class="rating">
+                                        <span class="star"></span><span class="star"></span
+                                        ><span class="star"></span><span class="star"></span
+                                        ><span class="star"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial_card">
+                                    <div class="icon">
+                                        <img src="" alt="" />
+                                    </div>
+                                    <h4 class="name">Name of Testifier</h4>
+                                    <p>
+                                        In publishing and graphic design, Lorem ipsum is a
+                                        placeholder text commonly used to demonstrate the visual
+                                        form of a document.
+                                    </p>
+                                    <div class="rating">
+                                        <span class="star"></span><span class="star"></span
+                                        ><span class="star"></span><span class="star"></span
+                                        ><span class="star"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="support">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/support/Rectangle 1.png" alt="one" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/support/Rectangle 2.png" alt="two" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/support/Rectangle 3.png" alt="three" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/support/Heritage Bank PLC Logo.png" alt="four" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/support/Rectangle 5.png" alt="five" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/support/Unity bank logo.png" alt="siz" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/support/Rectangle 7.png" alt="seven" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/support/Rectangle 8.png" alt="eight" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="logo">
+                            <div class="logo_wrapper">
+                                <img src="./img/nav/logo_light.png" alt="" />
+                                <img src="./img/nav/logo_light.png" alt="" class="underlay" />
+                            </div>
+                        </div>
+                        <div class="quick_links">
+                            <div class="list">
+                                <h3>Quick Links</h3>
+                                <ul>
+                                    <li>
+                                        <p><a href="/">Home</a></p>
+                                    </li>
+                                    <li>
+                                        <p><a href="about.html">About Us</a></p>
+                                    </li>
+                                    <li>
+                                        <p><a href="">Our Sercives</a></p>
+                                    </li>
+                                    <li>
+                                        <p><a href="contact.html">Contact Us</a></p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list">
+                                <h3>Services</h3>
+                                <ul>
+                                    <li>
+                                        <p><a href="#">Consulting</a></p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <a href="#">Technology</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><a href="#">Financial Inclusion & Social Impact</a></p>
+                                    </li>
+                                    <li>
+                                        <p><a href="#">Business Intelligence & Analytics</a></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="contact">
+                            <div class="list">
+                                <h3>Address</h3>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            The Bulb Africa, 39 Ikorodu Road, Jibowu Lagos Nigeria.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Plot 32, Unity Road, Ikeja, Lagos, Nigeria.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list contact_details">
+                                <h3>Contact Information</h3>
+                                <ul>
+                                    <li>
+                                        <p>0700THEDESK</p>
+                                    </li>
+                                    <li>
+                                        <p>support@intelyticslimited.com</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="social top d-flex d-md-none">
+                            <div class="bi bi-facebook"></div>
+                            <a target="blank" href="https://www.linkedin.com/in/intelytics-limited-0570111a9"><i class="bi bi-linkedin"></i></a>
+                            <a target="blank" href="https://www.instagram.com/intelyticslimited"><i class="bi bi-instagram"></i></a>
+                            <div class="bi bi-twitter"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="grid">
+                        <div class="copy">Copyright @2021 | All Rights Reserved.</div>
+                        <div class="accolade">
+                            Designed By <span class="colored">Intelytics</span>
+                        </div>
+                        <div class="social">
+                            <div class="bi bi-facebook"></div>
+                            <a target="blank" href="https://www.linkedin.com/in/intelytics-limited-0570111a9"><i class="bi bi-linkedin"></i></a>
+                            <a target="blank" href="https://www.instagram.com/intelyticslimited"><i class="bi bi-instagram"></i></a>
+                            <div class="bi bi-twitter"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./libraries/jquery-3.6.0.slim.min.js"></script>
+        <script src="./libraries/swiper-bundle.min.js"></script>
+        <script src="./libraries/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="./libraries/bootstrap.min.js"></script>
+        <script src="./libraries/ScrollTrigger.min.js"></script>
+        <script src="./main.js"></script>
+        <script>
+            ScrollAnim();
+        </script>
+    </body>
+</html>
